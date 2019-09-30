@@ -16,5 +16,5 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     - uses: actions/gcloud/auth@master
-      with:
+      env:
         GCLOUD_AUTH: ${{ secrets.GOOGLE_SA_KEY_PROD }}
