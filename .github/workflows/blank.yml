@@ -20,6 +20,7 @@ jobs:
         GCLOUD_AUTH: ${{ secrets.GOOGLE_SA_KEY_PROD }}
     - uses: actions/gcloud/cli@master
       with:
-        args: container clusters list
+        args: $ARGS_VAR
       env:
         CLOUDSDK_CORE_PROJECT: yacob-production
+        ARGS_VAR: container clusters list
