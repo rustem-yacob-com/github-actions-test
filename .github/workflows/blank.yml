@@ -21,3 +21,5 @@ jobs:
     - uses: actions/gcloud/cli@master
       with:
         args: container clusters list
+      env:
+        CLOUDSDK_CORE_PROJECT: yacob-production
