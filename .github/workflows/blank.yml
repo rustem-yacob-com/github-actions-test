@@ -19,5 +19,5 @@ jobs:
       env:
         GCLOUD_AUTH: ${{ secrets.GOOGLE_SA_KEY_PROD }}
     - uses: actions/gcloud/cli@master
-      args:
-        - container clusters list
+      with:
+        args: container clusters list
