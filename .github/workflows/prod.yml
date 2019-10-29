@@ -3,7 +3,7 @@ name: Prod workflow
 on:
   create:
     tags:
-      - v*-qa
+      - 'v*-production'
 
 jobs:
   build:

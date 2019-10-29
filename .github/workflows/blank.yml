@@ -11,16 +11,3 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-    - uses: actions/gcloud/auth@master
-      env:
-        GCLOUD_AUTH: ${{ secrets.GOOGLE_SA_KEY_PROD }}
-    - uses: actions/gcloud/cli@master
-      with:
-        args: $ARGS_VAR
-      env:
-        CLOUDSDK_CORE_PROJECT: yacob-production
-        ARGS_VAR: container clusters list

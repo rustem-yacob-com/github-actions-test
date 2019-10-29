@@ -3,7 +3,7 @@ name: QA workflow
 on:
   create:
     tags:
-      - v*-qa
+      - 'v*-qa'
 
 jobs:
   build:
