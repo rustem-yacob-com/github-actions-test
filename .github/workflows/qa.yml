@@ -1,7 +1,7 @@
 name: QA workflow
 
 on:
-  create:
+  push:
     tags:
       - 'v*-qa'
 
